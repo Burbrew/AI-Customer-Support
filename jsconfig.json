@@ -1,7 +1,26 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",  // Sets the base URL for module resolution
     "paths": {
-      "@/*": ["./*"]
-    }
-  }
+      "@components/*": ["src/app/components/*"],  // Alias for components directory
+      "@chatbots/*": ["src/app/chatbots/*"],      // Alias for chatbots directory
+      "@styles/*": ["src/app/styles/*"],          // Alias for styles directory
+      "@utils/*": ["src/app/utils/*"]             // Alias for utilities
+    },
+    "target": "esnext",  // Target modern JavaScript
+    "lib": ["dom", "dom.iterable", "esnext"],  // Specify standard library
+    "allowJs": true,  // Allow JavaScript files in the project
+    "skipLibCheck": true,  // Skip type checking of declaration files
+    "strict": true,  // Enable strict type-checking options
+    "forceConsistentCasingInFileNames": true,  // Disallow inconsistently-cased references to the same file
+    "noEmit": true,  // Prevent emitting output files
+    "jsx": "preserve",  // Keep JSX as-is for further processing by Next.js
+    "moduleResolution": "node",  // Resolve modules using Node.js-style resolution
+    "resolveJsonModule": true,  // Allow importing .json files
+    "isolatedModules": true,  // Ensure every file can be safely transpiled without relying on other imports
+    "noUnusedLocals": true,  // Report errors on unused local variables
+    "noUnusedParameters": true  // Report errors on unused parameters
+  },
+  "include": ["src/**/*"],  // Include all files in the src directory
+  "exclude": ["node_modules", "dist", ".next"]  // Exclude certain directories
 }

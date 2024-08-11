@@ -1,0 +1,72 @@
+body {
+  background-color: #7cfc00; /* Minecraft grass green */
+  font-family: 'Minecraft', sans-serif; /* Use a Minecraft-styled font */
+}
+
+.message-box {
+  background-color: #3b3b3b; /* Dark grey, like stone */
+  color: #ffffff; /* White text */
+  padding: 10px;
+  margin: 10px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  border: 3px solid #b5651d; /* Brown border, like wood */
+}
+
+.message-box ul,
+.message-box ol {
+  padding-left: 20px; /* Adjust the padding to ensure bullets are within the box */
+  margin: 0; /* Reset the margin */
+}
+
+.message-box li {
+  list-style-position: inside; /* Ensures the bullet points are inside the text box */
+  margin-left: 0; /* Reset margin for list items */
+  padding-left: 10px; /* Add some padding to the left for proper alignment */
+}
+
+.primary-main {
+  background-color: #4caf50; /* Green, like a Minecraft grass block */
+  color: white;
+}
+
+.secondary-main {
+  background-color: #8b4513; /* Brown, like a Minecraft dirt block */
+  color: white;
+}
+
+#chat-container {
+  background-image: url('/public/wp8643134.jpg'); /* Add a Minecraft-themed background */
+  background-size: cover;
+  padding: 20px;
+  border: 5px solid #8b4513; /* Brown border, like wood */
+  border-radius: 10px;
+}
+
+#sidebar {
+  background-color: #3b3b3b;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  background-color: #8b4513; /* Brown, like a Minecraft dirt block */
+  color: #ffffff;
+  border: 2px solid #4caf50; /* Green border, like grass */
+  padding: 10px;
+  font-family: 'Minecraft', sans-serif;
+}
+
+button:hover {
+  background-color: #4caf50;
+  border-color: #8b4513;
+}
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url('/public/minecraft-font.ttf') format('truetype');
+}
